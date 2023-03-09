@@ -18,6 +18,9 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'tailwindcss'],
-  rules: {},
+  plugins: ['react', '@typescript-eslint', 'tailwindcss', 'simple-import-sort'],
+  rules: {
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+  },
 }
